@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Rage",
+  "version": "0.1.0",
+  "description": "Desabafe sem postar: guarda o texto da caixa do X localmente e limpa a caixa.",
+  "permissions": ["storage"],
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Raivas guardadas",
+    "default_popup": "popup.html"
+  }
+}

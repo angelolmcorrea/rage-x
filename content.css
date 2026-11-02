@@ -1,0 +1,29 @@
+.rage-btn {
+  margin-right: 8px;
+  padding: 0 16px;
+  min-height: 36px;
+  align-self: flex-end;
+  box-sizing: border-box;
+  border: 1px solid #c8102e;
+  border-radius: 9999px;
+  background: transparent;
+  color: #c8102e;
+  font: 700 15px -apple-system, "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+.rage-btn:hover { background: rgba(200, 16, 46, 0.1); }
+
+.rage-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #1d9bf0;
+  color: #fff;
+  font: 500 15px -apple-system, "Segoe UI", sans-serif;
+  z-index: 2147483647;
+  transition: opacity 0.5s;
+}
+.rage-toast-out { opacity: 0; }
